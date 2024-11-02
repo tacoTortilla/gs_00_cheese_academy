@@ -1,0 +1,427 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px; /* 幅は960ピクセルに設定 */
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+
+---------------------*/
+/*　パディングをサイズ内側にする処理 練習用　*/
+
+
+/*
+画像の上に文字を書く
+---------------------*/
+
+.title{
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	color:white;
+	height: 300px;
+  }
+
+  .title_box{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+  .title_text_1 {
+	color: white; /* 文字色 */
+	font-weight: bold; /* 太字 */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 文字の影 */
+	font-size: 36px; /* 文字サイズを48pxに設定 */
+    font-family: "Yu Gothic", "游ゴシック", Roboto, sans-serif; /* 日本語は遊ゴシック、英字はRoboto */       
+	white-space: nowrap; /* 改行しない設定 */
+	display: flex;
+	justify-content: center;
+}
+
+.title_text_2 {
+	color: white; /* 文字色 */
+	font-size: 36px; /* 文字サイズを36pxに設定 */
+    font-family: "Yu Gothic", "游ゴシック", Roboto, sans-serif; /* 日本語は遊ゴシック、英字はRoboto */       
+	white-space: nowrap; /* 改行しない設定 */
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+/*
+任意のスペースを作ってみる
+---------------------*/
+.space_40 {
+	height: 40px;
+}
+
+.space_120 {
+	height: 120px;
+}
+
+.space_12 {
+	height: 12px;
+}
+
+.space_24 {
+	height: 24px;
+}
+
+.space_64 {
+	height: 64px;
+}
+
+.space_40 {
+	height: 40px;
+}
+
+.space_80 {
+	height: 80px;
+}
+
+.space_32 {
+	height: 32px;
+}
+
+.space_56 {
+	height: 56px;
+}
+
+.space_48 {
+	height: 48px;
+}
+
+.space_120_width {
+	width: 120px;
+}
+
+
+.space_left_padding_48{
+	align-items: center; /* 縦方向に中央揃え */
+	justify-content: flex-start; /* 横方向は左揃え */
+	padding-left: 48px; /* 左側に48pxのパディングを設定 */
+	background-color: #efefef; /* 背景色を薄い灰色に設定 */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.space_right_padding_48{
+	align-items: center; /* 縦方向に中央揃え */
+	justify-content: flex-end; /* 横方向は右揃え */
+	padding-right: 48px; /* 右側に48pxのパディングを設定 */
+	background-color: #efefef; /* 背景色を薄い灰色に設定 */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.space_left_padding{
+	justify-content: flex-start; /* 横方向は左揃え */
+}
+
+.space_left_padding_48b{
+	justify-content: flex-start; /* 横方向は左揃え */
+	padding-left: 48px; /* 左側に48pxのパディングを設定 */
+}
+
+/*
+flex 横並び
+---------------------*/
+
+.field_yoko{
+	display: flex;
+	justify-content: space-between;/* 水平方向に配置する際に、それぞれの要素の間に等しいスペースを作る */
+	align-items: center;/* 縦方向に中央揃え */
+	height: 80px;
+	font-size: 21px;
+	border-bottom: 2px solid #efefef; /* 下線に#efefefの色を設定 */
+}
+
+.field_yoko_1{
+	display: flex;
+	justify-content: center;
+}
+
+
+.field_yoko_2 {
+	display: flex; /* Flexboxを有効化して横並びにする */
+	width: 960px; /* 幅を960pxに設定 */
+	height: auto; /* ボックスの高さ */
+}
+
+.field_yoko_3 {
+	display: flex;
+	justify-content: center; /* 全体を中央に寄せる */
+	gap: 32px; /* 各要素の間隔を32pxに設定 */
+	width: 80%; /* 全体の幅を960pxに設定 */
+	margin: 0 auto; /* コンテナ自体を中央揃え */
+}
+
+.field_yoko_4 {
+	display: flex; /* Flexboxを有効化して横並びにする */
+	justify-content: center; /* 全体を中央に寄せる */
+	width: 960px; /* 幅を960pxに設定 */
+	height: auto; /* ボックスの高さ */
+}
+
+/* ★ */
+.field_yoko_5 {
+	display: flex; /* Flexboxを有効化して横並びにする */
+	justify-content: flex-end; /* 全体を右に寄せる */
+	width: 960px; /* 幅を960pxに設定 */
+	font-size: 36px; /* 文字サイズ */
+}
+
+.field_yoko_6 {
+	display: flex; /* Flexboxを有効化して横並びにする */
+	justify-content: center; /* 全体を中央に寄せる */
+	width: 960px; /* 幅を960pxに設定 */
+	font-size: 36px; /* 文字サイズ */
+	background-color: #ffd61a; /* 背景色を薄い灰色に設定 */
+}
+
+.field_yoko_7 {
+	align-items: center; /* 縦方向に中央揃え */
+	background-color: #efefef; /* 背景色を薄い灰色に設定 */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 480px;
+}
+
+
+.img_width{
+	width: 90%;
+}
+
+/*
+flex 縦並び
+---------------------*/
+.field_tate{
+	display: flex;
+	flex-direction: column; /* 縦に並べる */
+	align-items: center; /* 横方向に中央揃え */
+}
+
+.field_tate_bg1{
+	display: flex;
+	flex-direction: column; /* 縦に並べる */
+	align-items: center; /* 横方向に中央揃え */
+	background-color: #fafafa;
+}
+
+.field_tate_footer{
+	display: flex;
+	flex-direction: column; /* 縦に並べる */
+	align-items: center; /* 横方向に中央揃え */
+	width: 960px;
+	background-color: darkslategray;
+	font-size: 18px; /* 文字サイズ */
+	color: #ffffff; /* 文字の色を #ffffff に設定 */
+}
+
+
+/*
+画像サイズ調整
+---------------------*/
+.small_image_height80pix {
+	height: 80px; /* 画像の高さを80ピクセルに設定 */
+	width: auto; /* 幅は自動調整して縦横比を維持 */
+}
+
+.small_image_width960pix {
+	height: auto; /* 高さは自動調整して縦横比を維持 */
+	width: 960px; /* 幅は960ピクセルに設定 */
+}
+
+.small_image_width480pix {
+	height: auto; /* 高さは自動調整して縦横比を維持 */
+	width: 480px; /* 幅は480ピクセルに設定 */
+}
+
+.small_image_width240pix {
+	height: auto; /* 高さは自動調整して縦横比を維持 */
+	width: 240px; /* 幅は480ピクセルに設定 */
+}
+
+.small_image_width120pix {
+	height: auto; /* 高さは自動調整して縦横比を維持 */
+	width: 120px; /* 幅は480ピクセルに設定 */
+}
+
+.small_image_height40pix {
+	height: 40px; /* 高さは指定縦横比を維持 */
+	width: auto; /* 幅はAUTOに設定 */
+}
+
+.small_image_height80pix {
+	height: 80px; /* 高さは指定縦横比を維持 */
+	width: auto; /* 幅はAUTOに設定 */
+}
+
+.map-container {
+	width: 960px; /* 幅を960pxに設定 */
+	height: 540px; /* 縦横比16:9に基づいた高さ（960px * 9 / 16 = 540px） */
+	margin: 0 auto; /* 中央に配置 */
+}
+
+/*
+font設定
+---------------------*/
+.yellow_midashi{
+	color: #ffd61a; /* 文字の色を #ffd61a に設定 */
+	font-size: 24px; /* 文字サイズ */
+}
+
+.black_midashi{
+	color: #222222; /* 文字の色を #222222 に設定 */
+	font-size: 24px; /* 文字サイズ */
+}
+
+.black_midashi_2{
+	color: #222222; /* 文字の色を #222222 に設定 */
+	font-size: 24px; /* 文字サイズ */
+	width: 240px;
+	background-color: rgb(233, 232, 213);
+}
+
+.black_midashi_3{
+	color: #222222; /* 文字の色を #222222 に設定 */
+	font-size: 16px; /* 文字サイズ */
+	width: 720px;
+	background-color: rgb(222, 222, 214);
+}
+
+.black_midashi_4{
+	color: #382e5a; /* 文字の色を #222222 に設定 */
+	font-size: 18px; /* 文字サイズ */
+}
+
+.back_yellow_midashi{
+	color: #ffffff; /* 文字の色を #ffffff に設定 */
+	font-size: 21px; /* 文字サイズ */
+	background-color: #ffd61a;
+	width: 300px;
+	height: 60px;
+	display: flex;
+	justify-content: center; /* 横方向の中央揃え */
+	align-items: center; /* 縦方向の中央揃え */
+}
+
+.back_yellow_midashi_2{
+	color: #ffffff; /* 文字の色を #ffffff に設定 */
+	font-size: 21px; /* 文字サイズ */
+	background-color: #ffd61a;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center; /* 横方向の中央揃え */
+	align-items: center; /* 縦方向の中央揃え */
+}
+
+
+/*
+form枠設定
+---------------------*/
+
+.form_waku_0{
+	width: 120px;
+}
+
+.form_waku_1{
+	width: 328px;
+	height: 36px;
+	border: 2px solid bisque;
+	padding: 2px;
+}
+
+.form_waku_2{
+	width: 328px;
+	height: 108px;
+	border: 2px solid bisque;
+	padding: 2px;
+}
+
+.form_waku_3{
+	width: 328px;
+}
+
+
+/* 複数画像切り替え---------------------------------------------- */
+.slider-container {
+	position: relative;
+	width: 480px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.slideimg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-size: cover;/* 画像をスライド全体にカバー */
+	animation: slideAnime 15s infinite; /* 15秒で1サイクル */
+}
+
+@keyframes slideAnime {
+	0%, 30%, 100% { opacity: 0; }/* スライドの非表示タイミング */
+	10%, 20% { opacity: 1; }/* スライドの表示タイミング */
+}
+
+
+/* 各スライドのアニメーションタイミングを均等にずらす */
+.slideimg:nth-of-type(1){
+	background-image: url('../img/factory01.jpg');
+	animation-delay: 0s;
+}
+
+.slideimg:nth-of-type(2) {
+	background-image: url('../img/factory01_02.jpg');
+	animation-delay: 3s;
+}
+
+.slideimg:nth-of-type(3) {
+	background-image: url('../img/factory01_03.jpg');
+	animation-delay: 6s;
+}
+
